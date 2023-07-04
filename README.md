@@ -1,31 +1,27 @@
-# Decision Support System
+# Sistem Pendukung Keputusan - Simple Additive Weighting
 
-This is a Decision Support System (DSS) web application using Simple Additive Weighting (SAW) algorithm.
+Sistem Pendukung Keputusan Menggunakan Simple Additive Weighting (SAW)
 
-Features :
+Fitur :
 
-- Simple Additive Weighting algorithm
+- Algoritma Simple Additive Weighting(SAW)
 
-- Customizable criteria
+- Kriteria Dinamis
 
-- Result table
+- Perangkingan
 
-Screenshot :
-[![menu](https://raw.githubusercontent.com/ilham-openbeta/laravel-dss/main/screenshot/alternative_menu.png "Alternative Menu")](https://raw.githubusercontent.com/ilham-openbeta/laravel-dss/main/screenshot/alternative_menu.png)
 
-Some library used in this project :
+Library & Framework :
 
 - Laravel 8.0
 
 - AdminLTE 3.1.0
 
-- Bootstrap 4.5.2 (+ Popper.js)
+- Bootstrap 4.5.2
 
 - DataTables 1.10.21
 
 - jQuery 3.5.1
-
-Tested on :
 
 - Apache Web Server 2.4.43
 
@@ -33,7 +29,7 @@ Tested on :
 
 - MariaDB 10.3.22
 
-## How to Install
+## Cara Install
 
 1. Check [laravel documentation](https://laravel.com/docs/8.x) to see the requirement.
 
@@ -44,23 +40,24 @@ Tested on :
    ```bash
    composer install
    ```
+ 
+4. Or.
 
-4. Create .env file based on .env.example file and set it up.
+	```bash
+	composer update
+	```
 
-5. Migrate the empty database table or import the database example.sql for example.
+5. Create .env file based on .env.example file and set it up.
+
+6. Migrate the empty database table or import the database example.sql for example.
+   
+   ```bash
+   php artisan key:generate
+   ```
+
+7. Migrate the empty database table or import the database example.sql for example.
    
    ```bash
    php artisan migrate
    ```
 
-## TODO
-
-- Add authentication
-- Add alternative group
-- Add another algorithm
-- Use jetstream
-- Use AJAX
-
-## License
-
-MIT. See the LICENSE file.
