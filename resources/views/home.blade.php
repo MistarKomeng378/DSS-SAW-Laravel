@@ -32,7 +32,7 @@
                         <div class="icon">
                             <i class="fas fa-users"></i> 
                         </div>
-                        <a href="#" class="small-box-footer"><i class="fas fa-home"></i></a>
+                        <a href="#" class="small-box-footer"><i class="fas fa-users"></i></a>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@
                         <div class="icon">
                             <i class="fas fa-venus"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-venus"></i></a>
+                        <a href="#" class="small-box-footer"><i class="fas fa-venus"></i></a>
                     </div>
                 </div>
             </div>
