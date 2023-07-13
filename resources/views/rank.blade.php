@@ -73,7 +73,7 @@
                                             @endphp      
                                         @endif
                                         <td> 
-                                            <span data-toggle="tooltip" data-placement="bottom" title="{{ $ket }}">
+                                            <span data-toggle="tooltip" data-placement="bottom">
                                                 <button type="submit" class="{{ $btn }}">{{ $ket }}</button>
                                             </span>
                                         </td>
