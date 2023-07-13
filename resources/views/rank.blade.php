@@ -34,6 +34,7 @@
                                         <th>{{$c->name}}</th>
                                         @endforeach
                                         <th>Total</th>
+                                        <th>Keterangan</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -50,8 +51,22 @@
                                             $total += $s->rating;
                                             @endphp
                                             <td>{{$s->rating}}</td>
-                                        @endforeach
+                                            
+                                        @endforeach 
+                                        
                                         <td>{{$total}}</td>
+
+                                        
+                                        @if ($total > 0.9)
+                                            @php
+                                                $ket = 'Dapat';
+                                            @endphp                                            
+                                        @else
+                                            @php
+                                                $ket = 'Gagal';
+                                            @endphp      
+                                        @endif
+                                        <td>{{$ket}}</td>
                                     </tr>
                                     @endforeach
                                 </tbody>
