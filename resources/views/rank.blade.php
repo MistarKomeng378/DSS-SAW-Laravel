@@ -59,14 +59,20 @@
                                         
                                         @if ($total > 0.9)
                                             @php
-                                                $ket = 'Dapat';
+                                                $ket = 'Dapat Bantuan';
+                                                $btn = 'btn btn-success btn-sm';                                                
                                             @endphp                                            
                                         @else
                                             @php
-                                                $ket = 'Gagal';
+                                                $ket = 'Tidak Dapat';
+                                                $btn = 'btn btn-danger btn-sm';
                                             @endphp      
                                         @endif
-                                        <td>{{$ket}}</td>
+                                        <td> 
+                                            <span data-toggle="tooltip" data-placement="bottom" title="{{ $ket }}">
+                                                <button type="submit" class="{{ $btn }}">{{ $ket }}</button>
+                                            </span>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
