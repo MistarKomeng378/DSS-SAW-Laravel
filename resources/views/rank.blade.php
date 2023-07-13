@@ -23,8 +23,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="card">
+                    <div class="card">                        
                         <div class="card-body">
+                            <div class="col-lg-12">
+                                <a href="{{route('alternatives.create')}}" class='btn btn-primary'> <span
+                                    class='fa fa-print'></span> Cetak</a>
+                            </div>
                             <table id="mytable" class="display nowrap table table-striped table-bordered">
                                 <thead>
                                     <tr>
@@ -103,7 +107,7 @@
             // "pageLength": 3,            
             "order": [[ 6, 'desc' ]],            
             "lengthChange": false,
-            "searching": false,
+            "searching": true,
             "ordering": true,
             "info": true,
             "autoWidth": false,
