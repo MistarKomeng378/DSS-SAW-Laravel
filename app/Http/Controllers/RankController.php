@@ -6,6 +6,7 @@ use App\Models\Alternative;
 use App\Models\AlternativeScore;
 use App\Models\CriteriaWeight;
 use Illuminate\Http\Request;
+use PDF;
 
 class RankController extends Controller
 {
