@@ -26,6 +26,8 @@
                     <th height="45px">No</th>
                     <th>NIK</th>
                     <th>Nama Warga</th>
+                    <th>Alamat</th>
+                    <th>Telp</th>
                         @foreach ($criteriaweights as $c)
                             <th>{{$c->name}}</th>
                         @endforeach
@@ -39,6 +41,8 @@
                     <td align="center">{{ ++$i }}</td>
                     <td> &nbsp; {{ $a->nik }}</td>
                     <td> &nbsp; {{$a->name}}</td>
+                    <td> &nbsp; {{$a->telp}}</td>
+                    <td> &nbsp; {{$a->alamat}}</td>
                     @php
                         $scr = $scores->where('ida', $a->id)->all();
                         $total = 0;
