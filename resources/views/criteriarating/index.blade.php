@@ -98,6 +98,7 @@
         $('[data-toggle="tooltip"]').tooltip()
 
         $('#mytable').DataTable({
+            "order": [[ 1, 'asc' ]],
             "paging": true,
             "lengthChange": false,
             "searching": true,
