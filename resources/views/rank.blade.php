@@ -61,7 +61,7 @@
                                         <td>{{$total}}</td>
 
                                         
-                                        @if ($total > 200)
+                                        @if ($total >= 200)
                                             @php
                                                 $ket = 'Penerima Bantuan';
                                                 $btn = 'btn btn-success btn-sm';                                                
