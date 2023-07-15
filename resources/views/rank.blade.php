@@ -26,7 +26,7 @@
                     <div class="card">                        
                         <div class="card-body">
                             <div class="col-lg-12">
-                                <a href="{{route('alternatives.create')}}" class='btn btn-primary'> <span
+                                <a href="{{url('export')}}" class='btn btn-primary' target="_blank"> <span
                                     class='fa fa-print'></span> Cetak</a>
                             </div>
                             <table id="mytable" class="display nowrap table table-striped table-bordered">
@@ -63,12 +63,12 @@
                                         
                                         @if ($total > 0.9)
                                             @php
-                                                $ket = 'Dapat Bantuan';
+                                                $ket = 'Penerima Bantuan';
                                                 $btn = 'btn btn-success btn-sm';                                                
                                             @endphp                                            
                                         @else
                                             @php
-                                                $ket = 'Tidak Dapat';
+                                                $ket = 'Bukan Penerima';
                                                 $btn = 'btn btn-danger btn-sm';
                                             @endphp      
                                         @endif

@@ -46,7 +46,8 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('home', [HomeController::class, 'index']);
     Route::get('decision', [DecisionController::class, 'index']);
     Route::get('normalization', [NormalizationController::class, 'index']);
-    Route::get('rank', [RankController::class, 'index']);
+    Route::get('rank', [RankController::class, 'index']);    
+    Route::get('export', [RankController::class, 'export']);
     Route::get('logout', [LoginController::class, 'logout']);
 
 });

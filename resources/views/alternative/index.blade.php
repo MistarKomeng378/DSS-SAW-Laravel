@@ -42,9 +42,9 @@
                                     <tr>
                                         <th>NIK</th>
                                         <th>Nama Warga</th>
-                                        @foreach ($criteriaweights as $c)
-                                        <th>{{$c->name}}</th>
-                                        @endforeach
+                                            @foreach ($criteriaweights as $c)
+                                                <th>{{$c->name}}</th>
+                                            @endforeach
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -54,10 +54,11 @@
                                         <td>{{ $a->nik }}</td>
                                         <td>{{ $a->name}}</td>
                                         @php
-                                        $scr = $scores->where('ida', $a->id)->all();
+                                            $scr = $scores->where('ida', $a->id)->all();
                                         @endphp
+
                                         @foreach ($scr as $s)
-                                        <td>{{$s->description}}</td>
+                                            <td>{{$s->description}}</td>
                                         @endforeach
                                         <td>
                                             <form action="{{ route('alternatives.destroy',$a->id) }}" method="POST">
