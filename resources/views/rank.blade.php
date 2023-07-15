@@ -63,12 +63,12 @@
                                         
                                         @if ($total >= 200)
                                             @php
-                                                $ket = 'Penerima Bantuan';
+                                                $ket = 'Layak';
                                                 $btn = 'btn btn-success btn-sm';                                                
                                             @endphp                                            
                                         @else
                                             @php
-                                                $ket = 'Bukan Penerima';
+                                                $ket = 'Tidak Layak';
                                                 $btn = 'btn btn-danger btn-sm';
                                             @endphp      
                                         @endif

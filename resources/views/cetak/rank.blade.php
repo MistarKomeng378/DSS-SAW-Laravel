@@ -60,11 +60,11 @@
                     
                     @if ($total >= 200)
                         @php
-                            $ket = 'Penerima Bantuan';                                    
+                            $ket = 'Layak';                                    
                         @endphp                                            
                     @else
                         @php
-                            $ket = 'Bukan Penerima';
+                            $ket = 'Tidak Layak';
                         @endphp      
                     @endif
                     <td> &nbsp;{{ $ket }}</td>
