@@ -58,7 +58,7 @@
                     {{-- <td>{{$total}}</td> --}}
 
                     
-                    @if ($total > 0.9)
+                    @if ($total > 200)
                         @php
                             $ket = 'Penerima Bantuan';                                    
                         @endphp                                            
